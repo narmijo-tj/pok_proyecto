@@ -7,13 +7,14 @@ $(()=> {
     /* CAPTURAR EL FORMULARIO */
     const formFindPokemon = $("#formFindPokemon");
     
+    
     //ENCIENDO EVENTO SUBMIT DEL FORMULARIO
     formFindPokemon.on("submit", function(event){
         //QUITAMOS EL EVENTO POR DEFECTO DEL FORMULARIO (ACTUALIZAR PÁGINA)
         event.preventDefault();
 
         /* CAPTURAR ID O NOMBRE DEL POKEMON DESDE EL INPUT DEL FORMULARIO */
-        let idOrName = $("#findPokemon").val();
+        let idOrName = $("#findPokemon").val().toLowerCase();
 
         let rutaAPI = "https://pokeapi.co/api/v2/pokemon/"+idOrName;
         
