@@ -51,6 +51,7 @@ button {
 body {
     min-height: 100vh;
     background-color: var(--clr-gray);
+    background-color: #30DED5;
 }
 
 header {

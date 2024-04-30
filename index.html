@@ -5,33 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokedex</title>
-    
-    <!-- CSS BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    
-    <!-- JS BOOTSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
     crossorigin="anonymous"></script>
-    
-    <!-- JQUERY -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
     integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    
-    <!-- BOOTSTRAP ICONS -->
-    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
-    
-    <!-- estilo propio -->
     <link rel="stylesheet" href="./assets/css/style.css">
-
-    <!-- SCRIPT PROPIO -->
-
     <script defer src="./assets/js/main.js"></script>
 </head>
 <body>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <div class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
                     <img src="./assets/img/logo.png" alt="logo pokemon">
@@ -47,8 +33,7 @@
                     </div>
                 </div>
             </div>
-        </nav>
-    
+        </div>    
     <header>
         <nav class="nav">
             
@@ -99,7 +84,7 @@
                                 <label for="findPokemon" class="form-label">ID / Nombre Pokémon:</label>
                                 <input type="text" name="findPokemon" id="findPokemon" class="form-control my-3" required>
                                 <div class="d-flex justify-content-center">
-                                    <input type="submit" value="Busca un Pokémon" class="btn btn-success">
+                                    <input type="submit" value="Busca un Pokémon" class="btn btn-warning">
                                 </div>
                             </form>
                         </div>
@@ -121,9 +106,6 @@
             <div class="pokemon-todos" id="listaPokemon">
             </div>
         </div>
-
     </main>
-
-    <script src="./js/main.js"></script>
 </body>
 </html>
